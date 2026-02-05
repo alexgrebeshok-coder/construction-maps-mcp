@@ -1,0 +1,26 @@
+# MCP Framework
+mcp>=1.0.0
+
+# Geospatial libraries
+rosreestr2coord>=3.0.0
+shapely>=2.0.0
+geomet>=1.0.0
+
+# HTTP client
+aiohttp>=3.9.0
+requests>=2.31.0
+
+# Caching (SQLite + in-memory)
+cachetools>=5.3.0
+aiosqlite>=0.19.0
+
+# Validation and config
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+
+# Rate limiting and retry
+backoff>=2.2.1
+
+# Logging
+structlog>=24.0.0

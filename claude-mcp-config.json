@@ -1,0 +1,30 @@
+{
+  "construction-maps": {
+    "command": "/usr/local/bin/python3.14",
+    "args": [
+      "-m",
+      "construction_maps_mcp"
+    ],
+    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "env": {},
+    "description": "MCP server for construction land parcel analysis - Rosreestr + Yandex Maps",
+    "tools": [
+      "cadastre_get_boundaries",
+      "cadastre_get_info",
+      "cadastre_search_by_address",
+      "geocode_address_to_coords",
+      "geocode_coords_to_address",
+      "geocode_validate_address",
+      "infrastructure_find_nearby",
+      "infrastructure_calculate_distances",
+      "infrastructure_get_satellite_image",
+      "geometry_calculate_area",
+      "geometry_check_intersection",
+      "geometry_measure_distance",
+      "geometry_buffer",
+      "visualization_generate_static_map",
+      "visualization_export_geojson",
+      "visualization_export_to_json"
+    ]
+  }
+}

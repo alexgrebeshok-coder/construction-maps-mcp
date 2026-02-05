@@ -1,0 +1,10 @@
+DEBUG:rosreestr2coord.logger:Request URL: https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=77:01:0001000:1051&CRS=EPSG:4326
+INFO:rosreestr2coord.logger:Nothing found
+DEBUG:rosreestr2coord.logger:Request URL: https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=77:01:0001000:1051&CRS=EPSG:4326
+INFO:rosreestr2coord.logger:Nothing found
+DEBUG:rosreestr2coord.logger:Request URL: https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=77:01:0001000:1051&CRS=EPSG:4326
+INFO:rosreestr2coord.logger:Nothing found
+DEBUG:rosreestr2coord.logger:Request URL: https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=77:01:0001000:1051&CRS=EPSG:4326
+INFO:rosreestr2coord.logger:Nothing found
+DEBUG:rosreestr2coord.logger:Request URL: https://nspd.gov.ru/api/geoportal/v2/search/geoportal?thematicSearchId=1&query=77:01:0001000:1051&CRS=EPSG:4326
+INFO:rosreestr2coord.logger:Nothing found
