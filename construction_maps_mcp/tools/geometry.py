@@ -65,7 +65,12 @@ def geometry_calculate_area(geometry_geojson: dict, unit: str = "m2") -> str:
         return format_geometry_result("area", data)
 
     except Exception as e:
-        error_dict = await handle_tool_error("geometry_calculate_area", e)
+        error_dict = {
+            "error": "geometry_error",
+            "message": str(e),
+            "retry": False,
+            "user_message": f"Ошибка вычисления площади: {str(e)}",
+        }
         return format_error(error_dict)
 
 
@@ -116,7 +121,12 @@ def geometry_check_intersection(
         return format_geometry_result("intersection", data)
 
     except Exception as e:
-        error_dict = await handle_tool_error("geometry_check_intersection", e)
+        error_dict = {
+            "error": "geometry_error",
+            "message": str(e),
+            "retry": False,
+            "user_message": f"Ошибка проверки пересечения: {str(e)}",
+        }
         return format_error(error_dict)
 
 
@@ -154,7 +164,12 @@ def geometry_measure_distance(
         return format_geometry_result("distance", data)
 
     except Exception as e:
-        error_dict = await handle_tool_error("geometry_measure_distance", e)
+        error_dict = {
+            "error": "geometry_error",
+            "message": str(e),
+            "retry": False,
+            "user_message": f"Ошибка измерения расстояния: {str(e)}",
+        }
         return format_error(error_dict)
 
 
@@ -198,7 +213,12 @@ def geometry_buffer(geometry_geojson: dict, distance_m: float) -> str:
         return format_geometry_result("buffer", data)
 
     except Exception as e:
-        error_dict = await handle_tool_error("geometry_buffer", e)
+        error_dict = {
+            "error": "geometry_error",
+            "message": str(e),
+            "retry": False,
+            "user_message": f"Ошибка создания буфера: {str(e)}",
+        }
         return format_error(error_dict)
 
 
