@@ -26,7 +26,7 @@
 - MCP сервер корректно настроен в `~/.claude/mcp-servers.json`
 - Python 3.14 используется как runtime
 - `.env` файл присутствует с настройками
-- Yandex Maps API ключ настроен: `086afe11-***-2bef0dca`
+- Yandex Maps API ключ настроен: `YOUR_YANDEX_KEY`
 
 **Параметры**:
 ```

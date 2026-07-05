@@ -57,7 +57,7 @@ python3.10 -m construction_maps_mcp --help
 
 API ключ Yandex Maps уже добавлен в `.env`:
 ```
-YANDEX_MAPS_API_KEY=086afe11-2b0d-4e09-a779-6b8b2bef0dca
+YANDEX_MAPS_API_KEY=YOUR_YANDEX_KEY
 ```
 
 Остальные настройки можно оставить по умолчанию.

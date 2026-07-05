@@ -251,7 +251,7 @@ cd "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp"
 cat .env | grep YANDEX_MAPS_API_KEY
 ```
 
-Должен быть: `YANDEX_MAPS_API_KEY=086afe11-2b0d-4e09-a779-6b8b2bef0dca`
+Должен быть: `YANDEX_MAPS_API_KEY=YOUR_YANDEX_KEY`
 
 ### Медленная работа
 
