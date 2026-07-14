@@ -1,0 +1,67 @@
+[project]
+name = "construction-maps-mcp"
+version = "1.0.0"
+description = "MCP server for construction land parcel analysis using Rosreestr and Yandex Maps"
+authors = [{name = "Construction Maps Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    # MCP Framework
+    "mcp>=1.0.0",
+
+    # Geospatial libraries
+    "rosreestr2coord>=3.0.0",
+    "shapely>=2.0.0",
+    "geomet>=1.0.0",
+
+    # HTTP client
+    "aiohttp>=3.9.0",
+    "requests>=2.31.0",
+
+    # Caching (SQLite + in-memory)
+    "cachetools>=5.3.0",
+    "aiosqlite>=0.19.0",
+
+    # Validation and config
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "python-dotenv>=1.0.0",
+
+    # Rate limiting and retry
+    "backoff>=2.2.1",
+
+    # Logging
+    "structlog>=24.0.0",
+]
+
+[project.scripts]
+construction-maps-mcp = "construction_maps_mcp.__main__:cli_main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

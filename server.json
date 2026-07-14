@@ -1,0 +1,55 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.alexgrebeshok-coder/construction-maps-mcp",
+  "title": "Construction Maps MCP",
+  "description": "MCP server for pre-construction land parcel analysis — Rosreestr cadastre data, Yandex Maps geocoding, infrastructure proximity, and geometry tools.",
+  "repository": {
+    "url": "https://github.com/alexgrebeshok-coder/construction-maps-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "construction-maps-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "YANDEX_MAPS_API_KEY",
+          "description": "Yandex Maps API key (required for geocoding and maps)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "CACHE_DIR",
+          "description": "SQLite cache directory (default ~/.construction_maps_mcp)",
+          "isRequired": false
+        },
+        {
+          "name": "CACHE_MAX_SIZE_MB",
+          "description": "Maximum cache size in megabytes",
+          "isRequired": false
+        },
+        {
+          "name": "YANDEX_RATE_LIMIT_RPM",
+          "description": "Yandex API rate limit (requests per minute)",
+          "isRequired": false
+        },
+        {
+          "name": "ROSREESTR_RATE_LIMIT_RPM",
+          "description": "Rosreestr API rate limit (requests per minute)",
+          "isRequired": false
+        },
+        {
+          "name": "LOG_LEVEL",
+          "description": "Logging level (DEBUG, INFO, WARNING, ERROR)",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
