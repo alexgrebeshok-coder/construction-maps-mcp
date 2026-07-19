@@ -44,7 +44,7 @@ python3 --version
 После установки Python 3.10+:
 
 ```bash
-cd /Users/aleksandrgrebeshok/Проекты\ VScode/construction-maps-mcp
+cd ~/construction-maps-mcp
 
 # Установить зависимости (используйте python3.10!)
 python3.10 -m pip install -e .
@@ -66,6 +66,7 @@ YANDEX_MAPS_API_KEY=YOUR_YANDEX_KEY
 
 После успешной установки добавьте сервер в `~/.claude/mcp-servers.json`:
 
+<!-- замените <path-to>/construction-maps-mcp ниже на путь до вашей копии репозитория -->
 ```json
 {
   "construction-maps": {
@@ -74,7 +75,7 @@ YANDEX_MAPS_API_KEY=YOUR_YANDEX_KEY
       "-m",
       "construction_maps_mcp"
     ],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "<path-to>/construction-maps-mcp",
     "env": {}
   }
 }

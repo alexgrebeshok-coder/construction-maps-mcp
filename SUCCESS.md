@@ -24,7 +24,7 @@ nano ~/.claude/mcp-servers.json
 
 ### Шаг 2: Добавьте конфигурацию
 
-Скопируйте и вставьте:
+Скопируйте и вставьте (замените `<path-to>/construction-maps-mcp` на путь до вашей копии репозитория):
 
 ```json
 {
@@ -34,7 +34,7 @@ nano ~/.claude/mcp-servers.json
       "-m",
       "construction_maps_mcp"
     ],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "<path-to>/construction-maps-mcp",
     "env": {},
     "description": "MCP server for construction land parcel analysis - Rosreestr + Yandex Maps"
   }
@@ -51,7 +51,7 @@ nano ~/.claude/mcp-servers.json
   "construction-maps": {
     "command": "/usr/local/bin/python3.14",
     "args": ["-m", "construction_maps_mcp"],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "<path-to>/construction-maps-mcp",
     "env": {}
   }
 }
@@ -240,7 +240,7 @@ tail -f ~/.claude/logs/mcp-*.log
 
 ```bash
 # Переустановите зависимости
-cd "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp"
+cd ~/construction-maps-mcp
 /usr/local/bin/python3.14 -m pip install --user -e .
 ```
 

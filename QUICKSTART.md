@@ -11,7 +11,7 @@ API ключ Yandex Maps уже настроен ✅
 ## 📋 Автоматическая установка
 
 ```bash
-cd "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp"
+cd ~/construction-maps-mcp
 bash install.sh
 ```
 
@@ -44,7 +44,7 @@ https://www.python.org/downloads/ → Python 3.10+
 ### Шаг 2: Установите MCP сервер
 
 ```bash
-cd "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp"
+cd ~/construction-maps-mcp
 python3.10 -m pip install --user -e .
 ```
 
@@ -59,13 +59,13 @@ python3.10 -m pip install --user -e .
 nano ~/.claude/mcp-servers.json
 ```
 
-Добавьте туда содержимое из `claude-mcp-config.json`:
+Добавьте туда содержимое из `claude-mcp-config.json` (в файле `cwd` — плейсхолдер `<path-to>/construction-maps-mcp`, замените на путь до вашей копии репозитория):
 ```json
 {
   "construction-maps": {
     "command": "python3.10",
     "args": ["-m", "construction_maps_mcp"],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "<path-to>/construction-maps-mcp",
     "env": {}
   }
 }
@@ -87,7 +87,7 @@ nano ~/.claude/mcp-servers.json
 ### Тест 1: Запуск сервера вручную
 
 ```bash
-cd "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp"
+cd ~/construction-maps-mcp
 python3.10 -m construction_maps_mcp
 ```
 

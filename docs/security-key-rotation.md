@@ -46,7 +46,7 @@ YANDEX_MAPS_API_KEY=новый_ключ_здесь
 ### 2. Smoke-test
 
 ```bash
-cd "/Users/aleksandrgrebeshok/CODEBASE/Проекты VScode/construction-maps-mcp"
+cd ~/construction-maps-mcp
 python test_simple.py
 python test_functional.py   # опционально — реальные API-вызовы
 ```
@@ -73,4 +73,4 @@ python test_functional.py   # опционально — реальные API-в
 
 ---
 
-**Источник:** [РЕВЬЮ_РЕПОЗИТОРИЕВ_2026-07-05](file:///Users/aleksandrgrebeshok/Desktop/0_ШТАБ_ПРОЕКТОВ/00_ОБЗОР/РЕВЬЮ_РЕПОЗИТОРИЕВ_2026-07-05.md)
+**Источник:** внутренний обзор репозиториев от 05.07.2026 (закрытый документ, не публикуется)

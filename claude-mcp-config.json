@@ -5,7 +5,7 @@
       "-m",
       "construction_maps_mcp"
     ],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "<path-to>/construction-maps-mcp",
     "env": {},
     "description": "MCP server for construction land parcel analysis - Rosreestr + Yandex Maps",
     "tools": [

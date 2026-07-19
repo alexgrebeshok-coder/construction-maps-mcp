@@ -5,6 +5,7 @@ set -e
 
 CLAUDE_CONFIG="$HOME/.claude/mcp-servers.json"
 CLAUDE_DIR="$HOME/.claude"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "🔧 Добавление Construction Maps MCP в Claude Code"
 echo "================================================"
@@ -19,7 +20,7 @@ fi
 # Проверить существование файла
 if [ ! -f "$CLAUDE_CONFIG" ]; then
     echo "📝 Создание нового файла конфигурации"
-    cat > "$CLAUDE_CONFIG" << 'JSONEOF'
+    cat > "$CLAUDE_CONFIG" << JSONEOF
 {
   "construction-maps": {
     "command": "/usr/local/bin/python3.14",
@@ -27,7 +28,7 @@ if [ ! -f "$CLAUDE_CONFIG" ]; then
       "-m",
       "construction_maps_mcp"
     ],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "$SCRIPT_DIR",
     "env": {},
     "description": "MCP server for construction land parcel analysis - Rosreestr + Yandex Maps"
   }
@@ -39,14 +40,14 @@ else
     echo ""
     echo "Добавьте эту секцию в существующий файл вручную:"
     echo ""
-    cat << 'JSONEOF'
+    cat << JSONEOF
   "construction-maps": {
     "command": "/usr/local/bin/python3.14",
     "args": [
       "-m",
       "construction_maps_mcp"
     ],
-    "cwd": "/Users/aleksandrgrebeshok/Проекты VScode/construction-maps-mcp",
+    "cwd": "$SCRIPT_DIR",
     "env": {},
     "description": "MCP server for construction land parcel analysis"
   }
