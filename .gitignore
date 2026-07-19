@@ -52,3 +52,6 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Personal notes (local paths, not for public branch)
+ГОТОВО.txt
